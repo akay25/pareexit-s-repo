@@ -1,0 +1,192 @@
+# git
+
+# installing git on the system using terminal
+
+sudo apt install git  --> for installation
+
+git --version  --> for checking version of git
+
+# config
+
+git config --global user.email "pareexit.baldaniya@innvonix.in"  --> used to store email of the user
+git config --global user.name "Pareexit Baldaniya"  --> used to store email of the user
+
+git config --list  --> show all settings that have changed
+
+
+# staging
+
+git init  --> create a new folder on system and initialize it as a git repository
+
+git add <file> <file2>  --> used to add updated folder into git repository
+git add .  --> . is used for saving all the files at a time
+
+git status  --> current state of repository
+
+# commit
+
+git commit -m "commit message"  --> -m is used to add a message ti the commit  --> commit is a way to save the changes to repository
+
+git status
+
+git log  --> show the history of the repo
+
+# gitignore  --> used to ignore files and folders
+
+
+# SSH Key:
+-> used for directly connect to the GitHub without supplying token or user details every time.
+-> using this SSH Key to sign commits
+
+# SSH v/s HTTPS keys difference:
+
+1. SSH
+-> SSH is a secure because it uses key pair and need to add it to GitHub
+-> no need of login credentials everytime
+-> for cloning a repository it needs a private key
+
+2. HTTPS
+-> need of login credentials everytime
+-> anyone can clone repositories
+
++--------------------------------------------------------------------------------------------------------------------+
+
+# Variables and data types:
+
+1. str = ("Hello world")
+2. int = 1,2,3
+3. float = 3.0, 5.0
+4. boolean = True
+5. list = ['a','b','c']
+6. tuple = ('1','2','3')
+7. complex = 2 + 4j
+
++--------------------------------------------------------------------------------------------------------------------+
+
+# control flow:
+
+1. if
+-> used execute block of code if specific condition is true
+
+Ex.
+a = 5
+if a == 5
+print("a is equal to 5")
+
+2. if-else
+-> used to execute block of code if specific condition is true, and another block of code is false
+
+Ex.
+x = 3
+y = 4
+if x == y:
+    print("x is equal to y)
+else:
+    print("x is not equal to y)
+
+3. if-else-if
+-> used to execute block of code if specific condition is true, another block of code if another condition is true, and a default block if other is not true
+
+Ex.
+a = 15
+if a == 5:
+    print("a is equal to 5")
+elif a == 10:
+    print("a is equal to 10")
+else:
+    print("a is not equal to 5 or 10")
+
+4. Ternary operator
+-> used to assign a value to a variable based on a condition.
+
+Ex.
+a = 10
+print("a is equal to 5" if a == 5 else "a is not equal to 5")
+
+
++--------------------------------------------------------------------------------------------------------------------+
+
+# Functions:
+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+
+# Data Structure:
+
+1. List []: ordered, mutable
+-> index starting with 0 and ends with n-1
+
+Ex.
+list = ["a","b","c"]  --> multiple values
+list1 = [["o","p"],["q"]]  --> multi-dimentional list
+
+
+2. Tuple (): ordered, immutable
+-> need a trailing 'comma' to make it tuple
+-> index starting with 0 and ends with n-1
+
+Ex.
+Tuple = ('a','b')  --> tuple using string
+
+list1 = [1,2,3]  
+tuple = tuple(list1)  --> tuple using list
+
+
+3. Dict {}: unordered, immutable
+-> it holds a key:value pair
+
+Ex. 
+dict = {'name': 'xyz', 'b': 2}
+
+
+4. Set (): unordered, mutable, not allowed duplicates
+-> used for eliminate duplicate entries
+
+Ex.
+set = set([1,2,2,3,4,4,5])  --> o/p - 1,2,3,4,5
+
++--------------------------------------------------------------------------------------------------------------------+
+
+# Error handling:
+
+# errors and exception
+
+--> syntax of the exception handling:
+
+try:
+    # code
+except SomeException:
+    # code
+except SomeException:
+    # code
+else:
+    # code
+finally:
+    # code
+
+--> some types of the error/exceptions:
+
+1. ZeroDivisionError
+2. ValueError
+3. SyntaxError
+4. ArithmaticError, etc...
+
+Note: best practice is to identify the specific errors in place of generally getting tha errors/exceptions
+
++--------------------------------------------------------------------------------------------------------------------+
+
+# File handling:
+
+-> performing some operations on file like, opening, reading, writing and closing.
+
+--> Syntax:
+
+file = open('file1.txt', 'r')
+content = file.read()
+file.close()
+
+with open('file1.txt', 'w') as file:  --> with statement automatically close the file
+    file.write("Hello")
+
+print("File written successfully")
