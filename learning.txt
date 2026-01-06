@@ -13,7 +13,6 @@ git config --global user.name "Pareexit Baldaniya"  --> used to store email of t
 
 git config --list  --> show all settings that have changed
 
-
 # staging
 
 git init  --> create a new folder on system and initialize it as a git repository
@@ -33,6 +32,7 @@ git log  --> show the history of the repo
 
 # gitignore  --> used to ignore files and folders
 
+# git push origin main  --> push updated files/folders to the GitHub
 
 # SSH Key:
 -> used for directly connect to the GitHub without supplying token or user details every time.
@@ -49,6 +49,7 @@ git log  --> show the history of the repo
 -> need of login credentials everytime
 -> anyone can clone repositories
 
+# git clone  --> use for cloning the repository
 +--------------------------------------------------------------------------------------------------------------------+
 
 # Variables and data types:
