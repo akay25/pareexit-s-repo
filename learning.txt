@@ -365,7 +365,7 @@ def world():
 print(world)
 --> o/p = Hello!, World  --> before function runs, decorator works
           How are you?  --> after function run, decorator not works
-          
+
 +--------------------------------------------------------------------------------------------------------------------+
 
 # List operations:
@@ -466,6 +466,28 @@ $ pdb.post_mortem() or pdb.pm()
 +--------------------------------------------------------------------------------------------------------------------+
 
 # Collaboration(Conflict Resolver):
+-> collaboration happens when multiple people working on the same file at the same time
+-> at that time git act as a traffic controller
+-> conflict happens when multiple people change and commit exact same line of code in different way
+-> to resolve it conflict resolver is used
 
+# Merge conflict
+-> developer 1 change one line of code and developer 2 also change the same line of code
+-> when they combine their work, git gives error
 
+# How to resolve it
+
+1. find the markers:
+'<<<<<<<' HEAD  --> start of conflict 
+print("hello from developer 1")
+'======='  --> divider between two line
+print("hello from developer 2")
+'>>>>>>>' branch-name  --> end of conflict
+
+2. choose the winner:
+-> we can choose either keep version 1 or version 2 or both
+
+3. finalize:
+git add <file_name>
+git commit -m "<message>"
 +--------------------------------------------------------------------------------------------------------------------+
