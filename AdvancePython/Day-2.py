@@ -1,14 +1,16 @@
 # Day 2: Constructors and Methods
 
 # Task 1: simple constructure
-# class Toy:
-#     def __init__(self):
-#         self.name = "Bear"
-#         self.size = "small"
+# -> method namely __init__ used to set up the initial state of the object
 
-# toy = Toy()
-# print(toy.name)
-# print(toy.size)
+class Toy:
+    def __init__(self):
+        self.name = "Bear"
+        self.size = "small"
+
+toy = Toy()
+print(toy.name)
+print(toy.size)
 
 # Task 2: parameterized constructure
 class Movie:
