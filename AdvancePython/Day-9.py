@@ -48,3 +48,11 @@ cursor.execute(records)
 #     print(table)
     
 conn.close()
+
+
+# mysql -u root -p --> for connecting to the MySQL  ## here pass is only pressing 'enter' key
+# -> show database; --> for checking all available databases
+# -> show tables; --> for checking all available tables in database
+# -> status; --> for full info of database
+# -> use database_name --> for switch to that database
+# -> select * from database_name; --> for getting all tables
